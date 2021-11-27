@@ -1,0 +1,105 @@
+.home{
+    overflow: auto;
+    height: 85vh;
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+    
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: transparent; 
+    }
+    
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: #666; 
+        border-radius: 5px;
+        
+    }
+    
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: #999;
+    } 
+    &__channel{
+        display: flex;
+        align-items: center;
+        &-title{
+            font-weight: bold;
+            font-size: 26px;
+            line-height: 33px;
+            color: #FFFFFF;
+        }   
+        &-img{
+            width: 50px;
+            margin-right: 20px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        &-videos{
+            width: 100%;
+            margin-top: 20px;
+            height: 220px;
+        }
+    }
+    &__recom{
+        margin-top: 10px;
+        &-videos{
+            width: 100%;
+            margin-top: 20px;
+            height: 300px;
+        }
+    }
+    &__chan{
+        margin-top: 10px;
+        &-user{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &-text{
+            margin-left: 15px;
+            font-size: 16px;
+            line-height: 20px;
+            opacity: .5;
+            transform: translateY(5px);            
+        }
+        &-btn{
+            margin-right: 200px;
+            font-size: 16px;
+            line-height: 20px;
+            padding-left: 10px 20px;
+            text-align: center;
+            color: #FFFFFF;
+            background: #FF0000;
+            border-radius: 20px;
+            border: none;
+            width: 150px;
+            height: 40px;
+            border-radius: 20px;
+        }
+        &-videos{
+            margin-top: 20px;
+        }
+    }
+}
+@media screen and (max-width:400px) {
+   .home{
+    &__chan{
+        &-user{
+            display: flex;
+            flex-direction: column;
+            
+        }
+     
+        &-btn{
+            margin-right:0;
+    
+        }
+        &-videos{
+            margin-top: 20px;
+        }
+    }
+   }
+    
+}
